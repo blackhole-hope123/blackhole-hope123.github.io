@@ -12,14 +12,16 @@
         <section class="hero">
             <h1>Min Shi, PhD</h1>
             <p class="subtitle">
-                Machine Learning · Deep Learning · Generative AI · Quantitative Research
+                Machine Learning Research · Deep Learning · Generative AI · Scientific AI
             </p>
 
             <p>
-                I am a recent Mathematics PhD graduate from The Ohio State University
-                transitioning into machine learning and AI research. My work spans
-                deep learning, generative AI, agentic systems, graph neural networks,
-                and quantitative modeling.
+                I am a recent Mathematics PhD graduate from The Ohio State University working 
+                at the intersection of machine learning and scientific research. My work spans 
+                generative AI, graph neural networks, agentic systems, biomedical time-series 
+                modeling, and large-scale predictive modeling. I am particularly interested in 
+                using rigorous quantitative methods and modern ML to solve open-ended scientific 
+                problems.
             </p>
 
             <div class="links">
@@ -32,11 +34,36 @@
             <h2>Featured Research</h2>
 
             <div class="card">
+                <h3>Number theory research</h3>
+                <p class="meta">
+                    <a href="https://openreview.net/forum?id=T7c5LXuebY&noteId=d6G9jcBZOF&referrer=%5BAuthor%20Console%5D%28%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions%29" target="_blank" rel="noopener noreferrer">
+                        ICLR 2026
+                    </a>
+                </p>
+                <p>
+                    Developed a mathematical framework for studying competition among generative models, 
+                    combining game-theoretic analysis, optimization, and Python-based numerical simulations 
+                    to characterize equilibria, welfare, and strategic entry.
+                </p>
+                <p class="tags">
+                    Game Theory · Optimization · Generative AI · Mathematical Modeling · Python
+                </p>
+            </div>
+
+            PhD in Mathematics — The Ohio State University
+Research: Number theory, algebraic geometry, and representation theory.
+Conducted independent theoretical research involving literature synthesis, mathematical problem formulation, development and adaptation of technical methods, and rigorous proof.
+            
+            <div class="card">
                 <h3>Market Games for Generative Models</h3>
                 <p class="meta">ICLR 2026</p>
                 <p>
-                    Research on strategic interactions in generative AI markets,
-                    studying equilibrium behavior, welfare, and entry incentives.
+                    Developed a mathematical framework for studying competition among generative models, 
+                    combining game-theoretic analysis, optimization, and Python-based numerical simulations 
+                    to characterize equilibria, welfare, and strategic entry.
+                </p>
+                <p class="tags">
+                    Game Theory · Optimization · Generative AI · Mathematical Modeling · Python
                 </p>
             </div>
         </section>
@@ -45,51 +72,97 @@
             <h2>Selected Projects</h2>
 
             <div class="card">
-                <h3>RAG & Multi-Agent Research Assistant</h3>
-                <p>
-                    Built a research assistant combining dense retrieval and BM25
-                    with LLM-based agentic workflows for research-paper retrieval
-                    and citation-grounded responses.
-                </p>
-                <p class="tags">
-                    Python · LLMs · RAG · FAISS · BM25 · Agents
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Money Laundering Detection with Graph Neural Networks</h3>
-                <p>
-                    Developed machine-learning models for a highly imbalanced
-                    transaction dataset containing 9.5M transactions. A temporal
-                    graph neural network achieved 0.81 recall and 0.851 PR-AUC.
-                </p>
-                <p class="tags">
-                    Python · PyTorch · GNNs · XGBoost · Imbalanced Learning
-                </p>
-            </div>
-
-            <div class="card">
                 <h3>Parkinson's Disease Progression Modeling</h3>
                 <p>
-                    Analyzed longitudinal biomedical data and developed predictive
-                    models for disease progression, achieving a substantial reduction
-                    in prediction error relative to baseline.
+                    Modeled longitudinal Parkinson's disease progression using
+                    clinical time-series data from AMP PD. Developed lagged 
+                    predictive models and patient-pattern analyses, reducing 
+                    MAE by 55% relative to baseline. Investigated additional 
+                    protein-derived features and found limited incremental 
+                    predictive signal after systematic evaluation.
                 </p>
                 <p class="tags">
-                    Python · Machine Learning · Time Series · Biomedical Data
+                    Biomedical Data · Longitudinal Modeling · Time Series · Statistical Analysis · scikit-learn
                 </p>
             </div>
+
+            <div class="card">
+                <h3>Rare-Event Detection with Temporal Graph Neural Networks</h3>
+                <p>
+                    Developed temporal and graph-based representations for 9.5M 
+                    transactions with ~0.1% positive examples. Compared XGBoost, 
+                    Transformer, and Temporal GNN approaches and used imbalance-aware
+                    training to improve detection of rare events. The Temporal GNN 
+                    achieved 0.851 PR-AUC and reduced false negatives by 30%.
+                </p>
+                <p class="tags">
+                    PyTorch · Temporal GNNs · Transformers · XGBoost · Graph ML · Imbalanced Learning
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>RAG & Multi-Agent Research Assistant</h3>
+                <p>
+                    Built an agentic research workflow for academic literature using
+                    LangChain/ReAct, dense semantic retrieval with FAISS and 
+                    SentenceTransformers, BM25 lexical retrieval, and reranking. 
+                    The system retrieves and synthesizes research papers into 
+                    citation-grounded responses through a Streamlit interface.
+                </p>
+                <p class="tags">
+                    LLMs · Agents · ReAct · RAG · FAISS · SentenceTransformers · BM25 · Streamlit
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Production NLP Classification</h3>
+                <p>
+                    Built a BERT-based spam classifier on 5K+ messages, achieving 97% precision 
+                    and 89% recall, and deployed real-time inference through Flask, Docker, CI/CD, 
+                    and Azure App Service.
+                </p>
+                <p class="tags">
+                    BERT · NLP · Flask · Docker · CI/CD · Azure
+                </p>
+            </div>
+            
+        </section>
+        <section>
+            <h2>Machine Learning Experience</h2>
+            <div class="card">
+                    <h3>ML Engineer Intern — Tuilink</h3>
+                    <p>
+                        Worked on production ML systems spanning information extraction, 
+                        recommendation, semantic retrieval, and model interpretation. 
+                        Projects included a transformer-based NER pipeline across 50K+ resumes 
+                        (92% entity-level F1), a LightGBM learning-to-rank system using 
+                        100K+ interactions (+21% CTR, +16% NDCG@10), and embedding-based 
+                        semantic retrieval.
+                    </p>
+                    <p class="tags">
+                        NLP · Transformers · Embeddings · Learning-to-Rank · SHAP
+                    </p>
+            </div>
+            
         </section>
 
         <section>
             <h2>Technical Skills</h2>
             <p>
-                <strong>ML/AI:</strong> PyTorch, TensorFlow, scikit-learn,
-                Transformers, GNNs, LLMs, RAG, Agentic AI
+                <strong>Machine Learning:</strong> PyTorch, TensorFlow, scikit-learn,
+                Transformers, GNNs, NLP, time-series modeling
             </p>
             <p>
-                <strong>Programming & Engineering:</strong> Python, SQL, Linux,
-                Git, Docker, Azure
+                <strong>Generative AI: </strong> LLMs, RAG, ReAct, agentic workflows, 
+                FAISS, SentenceTransformers, BM25
+            </p>
+            <p>
+                <strong>Research & Modeling: </strong> Statistical inference, optimization,
+                simulation, experimental evaluation
+            </p>
+            <p>
+                <strong>Engineering: </strong> Python, SQL, Linux, Git, Docker, CI/CD, Flask, 
+                Azure
             </p>
         </section>
 
@@ -98,9 +171,14 @@
             <div class="card">
                 <h3>PhD in Mathematics</h3>
                 <p>The Ohio State University</p>
+                <p>Thesis: G-companions on algebraic stacks and applications to canonical ℓ-adic local systems on Shimura stacks </p>
                 <p>
-                    Research in number theory with background in algebraic geometry
-                    and representation theory.
+                    Conducted independent theoretical research involving literature synthesis,
+                    mathematical problem formulation, development and adaptation of technical methods
+                    and rigorous proof.
+                </p>
+                <p>
+                Advisor: Stefan Patrikis
                 </p>
             </div>
         </section>
