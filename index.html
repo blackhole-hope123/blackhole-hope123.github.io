@@ -1,190 +1,350 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min Shi | Machine Learning & AI</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<main>
 
-<body>
-    <main>
-        <section class="hero">
-            <h1>Min Shi, PhD</h1>
-            <p class="subtitle">
-                Machine Learning Research · Deep Learning · Generative AI · Scientific AI
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Min Shi, PhD</h1>
+
+        <p class="subtitle">
+            Machine Learning Research · Deep Learning · Generative AI · Scientific AI
+        </p>
+
+        <p class="intro">
+            I am a recent Mathematics PhD graduate from The Ohio State University
+            working at the intersection of machine learning and scientific research.
+            My work spans generative AI, graph neural networks, agentic systems,
+            biomedical time-series modeling, and large-scale predictive modeling.
+            I am particularly interested in using rigorous quantitative methods and
+            modern machine learning to tackle open-ended scientific problems.
+        </p>
+
+        <div class="links">
+            <a href="https://github.com/blackhole-hope123"
+               target="_blank" rel="noopener noreferrer">GitHub</a>
+
+            <!-- Add these once you have the URLs -->
+            <!--
+            <a href="YOUR_LINKEDIN_URL"
+               target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+            <a href="assets/Min_Shi_Resume.pdf"
+               target="_blank">Resume</a>
+            -->
+        </div>
+    </section>
+
+
+    <!-- FEATURED RESEARCH -->
+    <section>
+        <h2>Featured Research</h2>
+
+        <article class="card featured">
+            <h3>
+                Market Games for Generative Models:
+                Equilibria, Welfare, and Strategic Entry
+            </h3>
+
+            <div class="project-meta">
+                <span>Peer-Reviewed Research</span>
+                <span>Generative AI</span>
+                <span>Game Theory</span>
+            </div>
+
+            <p class="highlight">
+                <a href="https://openreview.net/forum?id=T7c5LXuebY"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    ICLR 2026
+                </a>
+            </p>
+
+            <h4>Research Question</h4>
+            <p>
+                How do strategic interactions among competing generative models
+                affect market equilibria, welfare, and incentives for new models
+                to enter?
+            </p>
+
+            <h4>Approach</h4>
+            <p>
+                Developed a mathematical framework for studying competition among
+                generative models, combining game-theoretic analysis, optimization,
+                and Python-based numerical simulations.
+            </p>
+
+            <h4>Contribution</h4>
+            <p>
+                Characterized equilibrium behavior, welfare implications, and
+                strategic entry in generative-model markets.
+            </p>
+
+            <p class="tags">
+                Game Theory · Optimization · Generative AI ·
+                Mathematical Modeling · Python
+            </p>
+
+            <div class="project-links">
+                <a href="https://openreview.net/forum?id=T7c5LXuebY"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Read Paper →
+                </a>
+            </div>
+        </article>
+    </section>
+
+
+    <!-- SELECTED WORK -->
+    <section>
+        <h2>Selected Work</h2>
+
+        <!-- PARKINSON'S -->
+        <article class="card">
+            <h3>Parkinson's Disease Progression Modeling</h3>
+
+            <div class="project-meta">
+                <span>Role: Data Scientist</span>
+                <span>Data: AMP PD longitudinal data</span>
+                <span>Result: 55% lower MAE vs. baseline</span>
+            </div>
+
+            <h4>Research Question</h4>
+            <p>
+                Can longitudinal clinical measurements improve prediction of
+                Parkinson's disease progression, and do additional
+                protein-derived features provide useful predictive signal?
+            </p>
+
+            <h4>Approach</h4>
+            <p>
+                Developed lagged predictive models and analyzed patient progression
+                patterns using longitudinal biomedical data. I also systematically
+                evaluated whether protein-derived features provided additional
+                predictive information.
+            </p>
+
+            <h4>Finding</h4>
+            <p>
+                Reduced MAE by 55% relative to baseline. Under the tested setup,
+                protein-derived features provided limited incremental predictive
+                signal.
+            </p>
+
+            <p class="tags">
+                Biomedical Data · Longitudinal Modeling · Time Series ·
+                Statistical Analysis · scikit-learn
+            </p>
+
+            <div class="project-links">
+                <a href="YOUR_PARKINSONS_GITHUB_URL"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project →
+                </a>
+            </div>
+        </article>
+
+
+        <!-- TEMPORAL GNN -->
+        <article class="card">
+            <h3>Rare-Event Detection with Temporal Graph Neural Networks</h3>
+
+            <div class="project-meta">
+                <span>Role: Data Scientist</span>
+                <span>Data: 9.5M transactions · ~0.1% positive</span>
+                <span>Result: 0.851 PR-AUC · 0.81 recall</span>
+            </div>
+
+            <h4>Problem</h4>
+            <p>
+                Detect money-laundering transactions under extreme class imbalance,
+                where positive examples account for only about 0.1% of the data
+                and conventional accuracy is not an informative evaluation metric.
+            </p>
+
+            <h4>Approach</h4>
+            <p>
+                Compared XGBoost, Transformer, and Temporal GNN approaches and
+                incorporated imbalance-aware training, including focal loss and
+                resampling, to improve rare-event detection.
+            </p>
+
+            <h4>Result</h4>
+            <p>
+                The Temporal GNN achieved 0.851 PR-AUC and 0.81 recall,
+                compared with 0.48 recall for the XGBoost baseline.
+            </p>
+
+            <p class="tags">
+                PyTorch · Temporal GNNs · Transformers · XGBoost ·
+                Graph ML · Imbalanced Learning
+            </p>
+
+            <div class="project-links">
+                <a href="YOUR_TGNN_GITHUB_URL"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project →
+                </a>
+            </div>
+        </article>
+
+
+        <!-- AGENTIC RESEARCH ASSISTANT -->
+        <article class="card">
+            <h3>Agentic Research Assistant for Scientific Literature</h3>
+
+            <div class="project-meta">
+                <span>Role: ML Engineer</span>
+                <span>System: Hybrid Retrieval + Agentic Workflow</span>
+            </div>
+
+            <h4>Problem</h4>
+            <p>
+                Scientific literature search requires both retrieving relevant
+                documents and synthesizing information while preserving
+                traceability to the original sources.
+            </p>
+
+            <h4>System Design</h4>
+            <p>
+                Built an agentic research workflow using LangChain/ReAct,
+                dense semantic retrieval with FAISS and SentenceTransformers,
+                BM25 lexical retrieval, reranking, and citation-grounded
+                generation through a Streamlit interface.
+            </p>
+
+            <h4>Outcome</h4>
+            <p>
+                The system retrieves and synthesizes information from research
+                papers into source-grounded responses through an interactive
+                research workflow.
+            </p>
+
+            <p class="tags">
+                LLMs · Agents · ReAct · RAG · FAISS ·
+                SentenceTransformers · BM25 · Streamlit
+            </p>
+
+            <div class="project-links">
+                <a href="YOUR_RAG_GITHUB_URL"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project →
+                </a>
+            </div>
+        </article>
+
+
+        <!-- PRODUCTION NLP -->
+        <article class="card">
+            <h3>Production NLP Classification</h3>
+
+            <div class="project-meta">
+                <span>Role: ML Engineer</span>
+                <span>Data: 5K+ messages</span>
+                <span>Result: 97% precision · 89% recall</span>
+            </div>
+
+            <h4>Problem</h4>
+            <p>
+                Build a real-time system capable of identifying spam messages
+                while maintaining high precision and practical deployment
+                performance.
+            </p>
+
+            <h4>System</h4>
+            <p>
+                Built a BERT-based classifier and deployed real-time inference
+                through Flask, Docker, CI/CD, and Azure App Service.
+            </p>
+
+            <h4>Result</h4>
+            <p>
+                Achieved 97% precision and 89% recall and packaged the model
+                into a deployable inference service.
+            </p>
+
+            <p class="tags">
+                BERT · NLP · Flask · Docker · CI/CD · Azure
+            </p>
+
+            <div class="project-links">
+                <a href="YOUR_SPAM_GITHUB_URL"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    View Project →
+                </a>
+            </div>
+        </article>
+
+    </section>
+
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section>
+        <h2>Machine Learning Experience</h2>
+
+        <article class="card">
+            <h3>ML Engineer Intern — Tuilink</h3>
+
+            <p>
+                Worked on production machine-learning systems spanning information
+                extraction, recommendation, semantic retrieval, and model
+                interpretation. Projects included transformer-based NER across
+                50K+ resumes, learning-to-rank using 100K+ interactions, and
+                embedding-based semantic retrieval.
+            </p>
+
+            <p class="tags">
+                NLP · Transformers · Embeddings · Learning-to-Rank · SHAP
+            </p>
+
+            <p class="small-note">
+                Additional professional experience and metrics are available
+                in my resume.
+            </p>
+        </article>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section>
+        <h2>Education</h2>
+
+        <article class="card education-card">
+            <h3>PhD in Mathematics — The Ohio State University</h3>
+
+            <p>
+                <strong>Research:</strong>
+                Number theory, algebraic geometry, and representation theory
             </p>
 
             <p>
-                I am a recent Mathematics PhD graduate from The Ohio State University working 
-                at the intersection of machine learning and scientific research. My work spans 
-                generative AI, graph neural networks, agentic systems, biomedical time-series 
-                modeling, and large-scale predictive modeling. I am particularly interested in 
-                using rigorous quantitative methods and modern ML to solve open-ended scientific 
-                problems.
+                <strong>Dissertation:</strong>
+                <em>
+                    G-companions on algebraic stacks and applications to
+                    canonical ℓ-adic local systems on Shimura stacks
+                </em>
             </p>
 
-            <div class="links">
-                <a href="https://github.com/blackhole-hope123">GitHub</a>
-                <!-- Add LinkedIn and resume links later -->
-            </div>
-        </section>
-
-        <section>
-            <h2>Featured Research</h2>
-
-            <div class="card">
-                <h3>Number theory research</h3>
-                <p class="meta">
-                    <a href="https://openreview.net/forum?id=T7c5LXuebY&noteId=d6G9jcBZOF&referrer=%5BAuthor%20Console%5D%28%2Fgroup%3Fid%3DICLR.cc%2F2026%2FConference%2FAuthors%23your-submissions%29" target="_blank" rel="noopener noreferrer">
-                        ICLR 2026
-                    </a>
-                </p>
-                <p>
-                    Developed a mathematical framework for studying competition among generative models, 
-                    combining game-theoretic analysis, optimization, and Python-based numerical simulations 
-                    to characterize equilibria, welfare, and strategic entry.
-                </p>
-                <p class="tags">
-                    Game Theory · Optimization · Generative AI · Mathematical Modeling · Python
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Market Games for Generative Models</h3>
-                <p class="meta">ICLR 2026</p>
-                <p>
-                    Developed a mathematical framework for studying competition among generative models, 
-                    combining game-theoretic analysis, optimization, and Python-based numerical simulations 
-                    to characterize equilibria, welfare, and strategic entry.
-                </p>
-                <p class="tags">
-                    Game Theory · Optimization · Generative AI · Mathematical Modeling · Python
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Selected Projects</h2>
-
-            <div class="card">
-                <h3>Parkinson's Disease Progression Modeling</h3>
-                <p>
-                    Modeled longitudinal Parkinson's disease progression using
-                    clinical time-series data from AMP PD. Developed lagged 
-                    predictive models and patient-pattern analyses, reducing 
-                    MAE by 55% relative to baseline. Investigated additional 
-                    protein-derived features and found limited incremental 
-                    predictive signal after systematic evaluation.
-                </p>
-                <p class="tags">
-                    Biomedical Data · Longitudinal Modeling · Time Series · Statistical Analysis · scikit-learn
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Rare-Event Detection with Temporal Graph Neural Networks</h3>
-                <p>
-                    Developed temporal and graph-based representations for 9.5M 
-                    transactions with ~0.1% positive examples. Compared XGBoost, 
-                    Transformer, and Temporal GNN approaches and used imbalance-aware
-                    training to improve detection of rare events. The Temporal GNN 
-                    achieved 0.851 PR-AUC and reduced false negatives by 30%.
-                </p>
-                <p class="tags">
-                    PyTorch · Temporal GNNs · Transformers · XGBoost · Graph ML · Imbalanced Learning
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>RAG & Multi-Agent Research Assistant</h3>
-                <p>
-                    Built an agentic research workflow for academic literature using
-                    LangChain/ReAct, dense semantic retrieval with FAISS and 
-                    SentenceTransformers, BM25 lexical retrieval, and reranking. 
-                    The system retrieves and synthesizes research papers into 
-                    citation-grounded responses through a Streamlit interface.
-                </p>
-                <p class="tags">
-                    LLMs · Agents · ReAct · RAG · FAISS · SentenceTransformers · BM25 · Streamlit
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>Production NLP Classification</h3>
-                <p>
-                    Built a BERT-based spam classifier on 5K+ messages, achieving 97% precision 
-                    and 89% recall, and deployed real-time inference through Flask, Docker, CI/CD, 
-                    and Azure App Service.
-                </p>
-                <p class="tags">
-                    BERT · NLP · Flask · Docker · CI/CD · Azure
-                </p>
-            </div>
-            
-        </section>
-        <section>
-            <h2>Machine Learning Experience</h2>
-            <div class="card">
-                    <h3>ML Engineer Intern — Tuilink</h3>
-                    <p>
-                        Worked on production ML systems spanning information extraction, 
-                        recommendation, semantic retrieval, and model interpretation. 
-                        Projects included a transformer-based NER pipeline across 50K+ resumes 
-                        (92% entity-level F1), a LightGBM learning-to-rank system using 
-                        100K+ interactions (+21% CTR, +16% NDCG@10), and embedding-based 
-                        semantic retrieval.
-                    </p>
-                    <p class="tags">
-                        NLP · Transformers · Embeddings · Learning-to-Rank · SHAP
-                    </p>
-            </div>
-            
-        </section>
-
-        <section>
-            <h2>Technical Skills</h2>
             <p>
-                <strong>Machine Learning:</strong> PyTorch, TensorFlow, scikit-learn,
-                Transformers, GNNs, NLP, time-series modeling
+                <strong>Advisor:</strong> Stefan Patrikis
             </p>
-            <p>
-                <strong>Generative AI: </strong> LLMs, RAG, ReAct, agentic workflows, 
-                FAISS, SentenceTransformers, BM25
-            </p>
-            <p>
-                <strong>Research & Modeling: </strong> Statistical inference, optimization,
-                simulation, experimental evaluation
-            </p>
-            <p>
-                <strong>Engineering: </strong> Python, SQL, Linux, Git, Docker, CI/CD, Flask, 
-                Azure
-            </p>
-        </section>
+        </article>
+    </section>
 
-        <section>
-            <h2>Education</h2>
-            <div class="card">
-                <h3>PhD in Mathematics</h3>
-                <p>The Ohio State University</p>
-                <p>Thesis: G-companions on algebraic stacks and applications to canonical ℓ-adic local systems on Shimura stacks </p>
-                <p>
-                    Conducted independent theoretical research involving literature synthesis,
-                    mathematical problem formulation, development and adaptation of technical methods
-                    and rigorous proof.
-                </p>
-                <p>
-                Advisor: Stefan Patrikis
-                </p>
-            </div>
-        </section>
 
-        <section>
-            <h2>Contact</h2>
-            <p>
-                <a href="https://github.com/blackhole-hope123">GitHub</a>
-            </p>
-        </section>
-    </main>
-</body>
-</html>
+    <!-- CONTACT -->
+    <section>
+        <h2>Contact</h2>
+
+        <div class="links">
+            <a href="https://github.com/blackhole-hope123"
+               target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+
+            <!-- Add LinkedIn / email / resume -->
+        </div>
+    </section>
+
+</main>
